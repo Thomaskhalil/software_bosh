@@ -19,7 +19,7 @@ class DeliveryPage extends StatelessWidget {
           children: [
             _buildSection(
               title: 'Delivery Address',
-              content: '123 Main St, Anytown, USA',
+              content: '9th Street, maadi, cairo, egypt',
             ),
             const SizedBox(height: 16),
             _buildSection(
@@ -27,16 +27,17 @@ class DeliveryPage extends StatelessWidget {
               content: null,
               child: Column(
                 children: [
-                  _buildSummaryRow('Subtotal', '\$99.99'),
-                  _buildSummaryRow('VAT (20%)', '\$19.99'),
-                  _buildSummaryRow('Total', '\$119.98', isBold: true),
+                  _buildSummaryRow('Subtotal', '\$34.04'),
+                  _buildSummaryRow('VAT (14%)', '\$4.62'),
+                  _buildSummaryRow('delivery fee', '\$5.00'),
+                  _buildSummaryRow('Total', '\$39.66', isBold: true),
                 ],
               ),
             ),
             const SizedBox(height: 16),
             _buildSection(
               title: 'Estimated Delivery Time',
-              content: '3 - 5 business days',
+              content: '40-50 minutes',
             ),
           ],
         ),
